@@ -9,6 +9,8 @@
     "chalk": "^5.2.0",
     "console-stamp": "^3.1.1",
     "express": "^4.18.2",
+    "node_js": "^0.1.0",
+    "node-fetch": "^3.3.1",
     "nodemon": "^2.0.22",
     "socket.io": "^4.6.1",
     "typescript": "^5.0.4",
@@ -18,7 +20,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node ./dist/app.js",
-    "test": "nodemon --ignore ./client/ ./dist/app.js"
+    "test": "nodemon --ignore ./client/ ./dist/app.js",
+    "postinstall": "npm run build"
   },
   "author": "Zeeraa",
   "license": "ISC"
